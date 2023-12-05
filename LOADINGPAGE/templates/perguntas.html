@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/perguntas.css">
+    <title>IMAG | PERGUNTAS</title>
+</head>
+<body>
+<img src="../static/image/back.png" alt="foto de fundo">
+
+<form action="/perguntas" method="POST">
+    <h1> Bem vindo ao IMAG</h1>
+  <div>
+
+        <select  id="perguntas">
+
+                <option id="aluno" name="aluno">
+                   Aluno
+                </option>
+
+                  <option id="prof" name="prof">
+                        Professor
+                  </option>
+                  <option value="secretaria" id="sec" name="sec">
+                        Secretaria
+                  </option>
+                  <option onclick="director()" onclick="director()" value="director" id="dir" name="dir">
+                        Director
+                  </option>
+                  <option value="funcionariodalimpeza"id="f-l" name="f-l">
+                        Funcionário da limpeza
+                  </option>
+                  <option value="funcionariodaseguranca" id="f-s" name="f-s">
+                        Funcionário da segurança
+
+                  </option>
+        </select>
+
+  </div>
+</form>
+<script type="text/javascript" src="../static/javascript/pergunta.js"></script>
+
+</body>
+</html>

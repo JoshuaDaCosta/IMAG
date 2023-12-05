@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <link rel = "apple-touch-icon" tamanhos = "180x180" href = "../static/image/apple-touch-icon.png">
+    <link rel = "icon" type = "image/png" tamanhos = "32x32" href = "../static/image/favicon-32x32.png">
+    <link rel = "icon" type = "image/png" tamanhos = "16x16" href = "../static/image/favicon-16x16.png">
+    <link rel = "manifest" href = "../static/site.webmanifest">
+    <title>IMAG | Login</title>
+</head>
+<body>
+    <button id="voltar">
+        <a href="/">voltar</a>
+    </button>
+{% set mensagem = get_flashed_messages() %}
+{% if mensagem%}
+ <div class="flash_alerta">
+     {{ mensagem[1]}}
+ </div>
+{% endif%}
+    <img src="../static/image/back.png" alt="foto de fundo">
+    <div id="form">
+            <h1>Login</h1>
+            <form action="/login" method="Post">
+                <label class="label-ms" for="email">Email</label>
+                <input class="input-ms" name="email-lg" type="email" required placeholder="digita o seu email">
+                <label class="label-ms" for="passe">Password</label>
+                <input class="input-ms" name="passe-lg" type="password" required placeholder="criar a sua password">
+                <j>
+                    <input id="chek"name="chek" type="checkbox">
+                    <label for="chek">salvar</label>
+                </j>
+                <button id="sub" type="submit">Enviar</button>
+                <t>Ainda não tens uma conta?<a href="/criar">clique aqui</a</t>
+
+            </form>
+    </div>
+    <div id="ile"></div>
+
+</body>
+</html>

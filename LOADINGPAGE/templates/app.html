@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {%if entidade=="aluno"%}
+    <link rel="stylesheet" href="/static/css/appaluno.css">
+    {%endif%}
+    {%if entidade=="professor"%}
+    <link rel="stylesheet" href="/static/css/appprofessor.css">
+    {%endif%}
+    <!-- FAVICON-->
+    <link rel = "apple-touch-icon" tamanhos = "180x180" href = "/static/image/apple-touch-icon.png">
+    <link rel = "icon" type = "image/png" tamanhos = "32x32" href = "/static/image/favicon-32x32.png">
+    <link rel = "icon" type = "image/png" tamanhos = "16x16" href = "/static/image/favicon-16x16.png">
+    <link rel = "manifest" href = "/static/site.webmanifest">
+    <title>IMAG | {{entidade.upper()}}</title>
+</head>
+<body>
+{%if entidade=="aluno"%}
+<!------------------------APP DO ALUNO------------------------------->
+
+{% block aluno%}
+{% endblock %}
+{%endif%}
+
+
+{%if entidade=="professor"%}
+<!------------------------APP DO PROFESSOR------------------------------->
+{% block professor%}
+{% endblock %}
+
+{%endif%}
+
+</body>
+</html>
