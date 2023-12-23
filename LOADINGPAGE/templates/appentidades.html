@@ -10,13 +10,49 @@
 
 {% block aluno%}
 <asside>
-    <li><a href="#">calendário</a></li>
-    <li><a href="#">matérias</a></li>
-    {% if not nomecompleto in dic %}
-        <li><a href="#">inscrição</a></li>
-        <li><a href="#">matricula</a></li>
-        <li><a href="#">confirmação</a></li>
-    {% endif%}
+    <span>
+        <img src="/static/image/back.png" alt="foto do {{user}}">
+        <div>
+            <nome>{{user}}</nome>
+            <entidade>{{entidade}}</entidade>
+        </div>
+        <div>
+            <a href="/logout">sair</a>
+            <a href="/{{user}}" title="perfil">perfil</a>
+        </div>
+    </span>
+    <ul>
+        {% if  not nomedicl in dicg %}
+        <li><a href="#">calendário</a></li>
+        <li><a href="#">matérias</a></li>
+        {% endif%}
+        {% if  not nomedicl in dicg %}
+        <li>
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    assignment
+                </span>
+                inscrição
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    newsmode
+                </span>
+                matriculas
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    edit_document
+                </span>
+                confirmação
+            </a>
+        </li>
+        {% endif%}
+    </ul>
 
 </asside>
 <main>

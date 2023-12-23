@@ -2,14 +2,11 @@
 /*font-family: 'Inter', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif;*/
+
 *{
     box-sizing: border-box;
     padding:0;
     margin:0;
-    font-family:inter;
-    border:0.5px dashed brown
-
-
 }
 :root{
     --bg-cast:#BB6763;
@@ -26,12 +23,94 @@ li{
 }
 a{
  text-decoration:none;
- color:black
-}
+ color:white;
 
+}
 body{
 display:flex;
-flex-direction:column;
+flex-direction:row;
 gap:10px;
+background:white;
 
+}
+asside{
+ display:flex;
+ flex-direction:column;
+ gap:10px;
+ background:var(--bg-az);
+ width:30%;
+
+}
+asside > span{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+ background:var(--bg-cast);
+ padding:10px;
+
+}
+asside > span > img{
+ width:80px;
+ height:80px;
+ border-radius:30px;
+}
+asside > span > div{
+ display:flex;
+ flex-direction:column;
+ justify-content:space-around;
+ gap:10px;
+}
+asside > span> div> nome{
+ font-size:16pt;
+ font-weight:800;
+ color:var(--bg-az);
+ text-transform:uppercase
+}
+asside > span> div> entidade{
+ font-size:14pt;
+ font-weight:700;
+ color:var(--bg-az);
+ text-transform:lowercase
+}
+asside > span > div > a[href="/logout"]{
+  color:var(--bg-cast);
+  font-weight:300;
+  font-size:15pt;
+  background:var(--bg-az);
+  padding:10px;
+  border-radius:10px;
+}
+asside > span > div > a{
+  color:green;
+  font-weight:300;
+  font-size:13pt;
+  background:white;
+  padding:5px;
+  border-radius:5px;
+
+}
+asside > ul{
+ display:flex;
+ flex-direction:column;
+ align-items:flex-end;
+ gap:20px;
+ margin:20px;
+
+
+}
+asside > ul >li{
+  width:100%;
+}
+asside > ul >li> a{
+
+  color:var(--bg-cast);
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  text-transform:uppercase;
+  font-size:20pt;
+  font-weight:bold;
+}
+asside > ul >li> a> span.material-symbols-outlined{
+ font-size:30pt
 }

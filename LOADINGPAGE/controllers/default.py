@@ -69,11 +69,10 @@ def login():
         try:
             if emaill==emaildicl:
                 user = auth.sign_in_with_email_and_password(emaill, senhal)
-                session['user']=emaill
-            return redirect(f'/app/aluno/{n[0]}{n[len(n) - 1]}')
-
+                session['user']=emaildicl
+                return abort(404, erro)
         except:
-            abort(403,'erro')
+                return redirect(f'/app/aluno/{n[0]}{n[len(n) - 1]}')
     return render_template('login.html')
 
 @IMAG.route('/logout')

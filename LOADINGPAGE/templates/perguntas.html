@@ -8,39 +8,14 @@
     <title>IMAG | PERGUNTAS</title>
 </head>
 <body>
-<img src="../static/image/back.png" alt="foto de fundo">
+<!--<img src="../static/image/back.png" alt="foto de fundo">-->
+<div>
+    <h1>Qual é o seu perfil?</h1>
+    <ul>
+        <li><a id="aluno" href="#">aluno</a></li>
+    </ul>
+</div>
 
-<form action="/perguntas" method="POST">
-    <h1> Bem vindo ao IMAG</h1>
-  <div>
-
-        <select  id="perguntas">
-
-                <option id="aluno" name="aluno">
-                   Aluno
-                </option>
-
-                  <option id="prof" name="prof">
-                        Professor
-                  </option>
-                  <option value="secretaria" id="sec" name="sec">
-                        Secretaria
-                  </option>
-                  <option onclick="director()" onclick="director()" value="director" id="dir" name="dir">
-                        Director
-                  </option>
-                  <option value="funcionariodalimpeza"id="f-l" name="f-l">
-                        Funcionário da limpeza
-                  </option>
-                  <option value="funcionariodaseguranca" id="f-s" name="f-s">
-                        Funcionário da segurança
-
-                  </option>
-        </select>
-
-  </div>
-</form>
-<script type="text/javascript" src="../static/javascript/pergunta.js"></script>
-
+<script type="text/javascript" src="../static/javascript/perguntas.js"></script>
 </body>
 </html>

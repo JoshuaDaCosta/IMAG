@@ -7,12 +7,12 @@
     <list default="true" id="4ae6c1fe-ba4c-477b-9c1e-f2ec41903cb5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LOADINGPAGE/controllers/default.py" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/controllers/default.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOADINGPAGE/models/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/models/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LOADINGPAGE/static/css/appaluno.css" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/static/css/appaluno.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOADINGPAGE/static/javascript/appaluno.js" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/static/javascript/appaluno.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOADINGPAGE/static/javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/static/javascript/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LOADINGPAGE/static/css/perguntas.css" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/static/css/perguntas.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LOADINGPAGE/static/javascript/perguntas.js" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/static/javascript/perguntas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LOADINGPAGE/templates/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/templates/app.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LOADINGPAGE/templates/appentidades.html" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/templates/appentidades.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOADINGPAGE/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LOADINGPAGE/templates/perguntas.html" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/templates/perguntas.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +33,7 @@
         <option value="Joshua_DaCosta_ &lt;joshuagcdacosta@gmail.com&gt;" />
       </list>
     </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -63,10 +64,10 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Albino Ferreira/Desktop/IMAG-V&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Albino Ferreira&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.database">
+  <component name="RunManager" selected="Python.run">
     <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IMAG-V" />
       <option name="INTERPRETER_OPTIONS" value="" />
