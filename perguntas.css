@@ -1,0 +1,185 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+:root{
+    --bg-cast:#BB6763;
+    --bg-az:#1A4E69;
+}
+li{
+ list-style:none;
+}
+
+a{
+ text-decoration:none;
+ color:white;
+ z-index:1;
+ text-align:center
+}
+#fundo{
+ width:100%;
+ height:100%;
+ z-index:-1;
+box-shadow: 0px 4px 90px 10px #1A4E69 inset;
+box-shadow: 0px 4px 90px 10px color(display-p3 0.1608 0.302 0.4039) inset;
+filter: blur(25px);
+width:100%;
+height:100%
+
+
+}
+#OpcaoAlu,#OpcaoAluInfo,#OpcaoAluInfo,#OpcaoAluInfoClass,#OpcaoAluInfoClassTurn,#dadosPessoaisAlu,#OpcaoProf,#OpcaoProfInfo,#OpcaoProfInfoDisc10,#OpcaoProfInfoDisc11,#OpcaoProfInfoDisc12,#OpcaoProfInfoDisc13{
+ display:none
+}
+form{
+z-index:1;
+position:absolute;
+top:25%;
+left:25%;
+width:700px;
+background:var(--bg-az);
+border-radius:30px;
+
+}
+form>h1{
+font-size:30pt;
+color:var(--bg-az);
+background:var(--bg-cast);
+padding:10px;
+margin-bottom:10px;
+border-radius:30px;
+
+}
+form > #inicioDeEscolhas > ul{
+ display:flex;
+ flex-direction:column;
+ gap:15px;
+ justify-content:space-around
+}
+form > #inicioDeEscolhas > ul> li{
+ color:var(--bg-cast);
+ font-size:20pt;
+ cursor:pointer;
+ margin:10px;
+transition:linear .4s;
+animation-name:left;
+ animation-duration:5s;
+}
+form > #inicioDeEscolhas > ul>li:nth-child(even){
+ animation-name:right;
+ animation-duration:4s;
+ }
+
+/*aluno*/
+#OpcaoAlu2>ul{
+display:flex;
+ flex-direction:column;
+ gap:15px;
+ justify-content:space-around
+
+}
+#OpcaoAlu2>ul>li{
+color:var(--bg-cast);
+ font-size:20pt;
+ cursor:pointer;
+ margin:10px;
+transition:linear .4s;
+animation-name:down;
+ animation-duration:5s;
+}
+#OpcaoAlu2>ul>li:nth-child(even){
+ animation-name:top;
+ animation-duration:4s;
+}
+/*aluno-classes*/
+#OpcaoAluInfo2>ul{
+ display:flex;
+ flex-direction:column;
+ gap:15px;
+ justify-content:space-around;
+}
+#OpcaoAluInfo2 >ul >li{
+color:var(--bg-cast);
+ font-size:20pt;
+ cursor:pointer;
+ margin:10px;
+transition:linear .4s;
+animation-name:right;
+ animation-duration:5s;
+}
+#OpcaoAluInfo2>ul>li:nth-child(even){
+ animation-name:top;
+ animation-duration:4s;
+}
+/*HOVER*/
+#OpcaoAlu2>ul>li:hover{
+    background:var(--bg-cast);
+    color:var(--bg-az);
+    padding-left:30px;
+    padding:10px;
+    border-radius:10px;
+    opacity:0.7;
+    transition:linear .4s;
+}
+#OpcaoAluInfo2>ul>li:hover{
+    background:var(--bg-cast);
+    color:var(--bg-az);
+    padding-left:30px;
+    padding:10px;
+    border-radius:10px;
+    opacity:0.7;
+    transition:linear .4s;
+}
+form > #inicioDeEscolhas > ul> li:hover{
+    background:var(--bg-cast);
+    color:var(--bg-az);
+    padding-left:30px;
+    padding:10px;
+    border-radius:10px;
+    opacity:0.7;
+    transition:linear .4s;
+
+
+
+}
+
+/*KEYFRAMES*/
+@keyframes top {
+  from {
+    transform: translateY(-250px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes down {
+  from {
+    transform: translateY(250px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes right {
+  from {
+    transform: translateX(-250px);
+    opacity:0.5;
+
+  }
+  to {
+    transform: translateX(0px);
+    opacity:1
+  }
+}
+@keyframes left {
+  from {
+    transform: translateX(500px);
+    opacity:0.5;
+
+  }
+  to {
+    transform: translateX(0px);
+    opacity:1
+  }
+}

@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ae6c1fe-ba4c-477b-9c1e-f2ec41903cb5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/perguntas.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LOADINGPAGE/controllers/default.py" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/controllers/default.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOADINGPAGE/static/css/appaluno.css" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/static/css/appaluno.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LOADINGPAGE/static/css/perguntas.css" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/static/css/perguntas.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LOADINGPAGE/static/javascript/perguntas.js" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/static/javascript/perguntas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOADINGPAGE/templates/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/templates/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOADINGPAGE/templates/appentidades.html" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/templates/appentidades.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LOADINGPAGE/templates/perguntas.html" beforeDir="false" afterPath="$PROJECT_DIR$/LOADINGPAGE/templates/perguntas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perguntas.html" beforeDir="false" afterPath="$PROJECT_DIR$/perguntas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perguntas.js" beforeDir="false" afterPath="$PROJECT_DIR$/perguntas.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +49,19 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/LOADINGPAGE/controllers/default.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LOADINGPAGE/static/css/perguntas.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LOADINGPAGE/static/javascript/perguntas.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LOADINGPAGE/templates/perguntas.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+    <option name="showPreview" value="true" />
+    <option name="sortByName" value="true" />
   </component>
   <component name="ProjectId" id="2Z47PX9hfXPjGxFg8VXOWxnFs6o" />
   <component name="ProjectLevelVcsManager">
@@ -64,7 +76,8 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Albino Ferreira&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Albino Ferreira/Desktop/AULA DE PYTHON/Cardpessoal.css&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
 }</component>
   <component name="RunManager" selected="Python.run">

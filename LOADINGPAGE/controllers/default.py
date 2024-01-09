@@ -40,11 +40,22 @@ def criar():
             session['user']=emailc
             return abort(404,erro)
         except:
-            return redirect(f'/app/aluno/{n[0]}{n[len(n) - 1]}')
+            return redirect('/perguntas')
     return render_template('criar.html')
 
 @IMAG.route('/perguntas')
 def pergunta():
+        if ('user' in session):
+            for entidade in dic:
+                # print(entidade)
+                for id in dic[entidade]:
+                    for info in dic[entidade][id]:
+                        info = dic[entidade][id]
+                        nomedicl = info['INFORMACAO PESSOAL']['NOME COMPLETO']
+                        emaildicl = info['INFORMACAO PESSOAL']['EMAIL']
+
+            n = nomedicl.split()
+        return redirect(f'/app/aluno/{n[0]}{n[len(n) - 1]}')
     return render_template('perguntas.html')
 
 @IMAG.route('/login', methods=['POST', 'GET'])
@@ -85,9 +96,13 @@ def logout():
 def app(entidade,user):
     e=entidade.lower()
     user=user.lower()
-
+    requisicaog = requests.get(f"{config['databaseURL']}/IMAG/ENTIDADES/.json")
+    dic = requisicaog.json()
     if ('user' in session):
-        return render_template('appentidades.html', entidade=e, user=user, id=id)
+        if user in dic:
+            return render_template('appentidades.html', entidade=e, user=user, id=id)
+        else:
+            abort(404,'erro')
     if not('user' in session):
         return  """
         <style>

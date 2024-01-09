@@ -1,3 +1,150 @@
 *{
- border:0.5px dashed brown;
+ /*border:0.5px dashed brown;*/
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+:root{
+    --bg-cast:#BB6763;
+    --bg-az:#1A4E69;
+}
+li{
+ list-style:none;
+}
+a{
+ text-decoration:none;
+ color:white;
+}
+
+#fundo{
+ width:100%;
+ height:100%;
+ z-index:-1;
+box-shadow: 0px 4px 90px 10px #1A4E69 inset;
+box-shadow: 0px 4px 90px 10px color(display-p3 0.1608 0.302 0.4039) inset;
+filter: blur(25px);
+width:100%;
+height:100%
+
+
+}
+
+div#container{
+ z-index:1;
+ background:var(--bg-az);
+ position:absolute;
+ top:30%;
+ left:25%;
+ width:50%;
+ border-radius:30px;
+ animation-name:top;
+animation-duration:7s;
+}
+div#container >h1{
+ font-size:35pt;
+ font-weight:bold;
+ background:var(--bg-cast);
+ color:var(--bg-az);
+ text-align:left;
+ border-radius:30px;
+ height:100px;
+ padding-top:20px;
+ padding-left:30px;
+ animation-name:top;
+ animation-duration:4.5s;
+
+}
+div#container >ul{
+margin-top:30px;
+padding:30px;
+display:flex;
+gap:10px;
+justify-content:space-around;
+flex-direction:column;
+align-items:flex-start;
+/*animation-name:right;
+animation-duration:3.5s;*/
+}
+
+div#container >ul>li:nth-child(1){
+animation-name:right;
+animation-duration:1s;
+
+}
+div#container >ul>li:nth-child(2){
+animation-name:right;
+animation-duration:2s;
+
+}
+div#container >ul>li:nth-child(3){
+animation-name:right;
+animation-duration:3s;
+
+}
+div#container >ul>li:nth-child(4){
+animation-name:right;
+animation-duration:4s;
+
+}
+div#container >ul>li:nth-child(5){
+animation-name:right;
+animation-duration:5s;
+
+}
+div#container >ul>li:nth-child(6){
+animation-name:right;
+animation-duration:6s;
+
+}
+div#container >ul>li:nth-child(7){
+animation-name:right;
+animation-duration:7s;
+
+}
+div#container >ul>li:nth-child(8){
+animation-name:right;
+animation-duration:8s;
+
+}
+div#container >ul>li:nth-child(9){
+animation-name:right;
+animation-duration:9s;
+
+}
+div#container >ul>li>a{
+ color:var(--bg-cast);
+ font-size:20pt;
+}
+
+/*hover*/
+div#container >ul > li >a:hover{
+    background:var(--bg-cast);
+    color:var(--bg-az);
+    padding-left:30px;
+    padding:10px;
+    border-radius:10px;
+    opacity:0.7;
+    transition:linear .4s;
+    animation-name:top;
+    animation-duration:3.5s;
+}
+
+@keyframes top {
+  from {
+    transform: translateY(-250px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@keyframes right {
+  from {
+    transform: translateX(-250px);
+    opacity:0.5;
+
+  }
+  to {
+    transform: translateX(0px);
+    opacity:1
+  }
 }

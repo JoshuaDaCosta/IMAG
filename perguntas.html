@@ -2,54 +2,52 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../static/css/perguntas.css">
+    <!-- FAVICON-->
+    <link rel = "apple-touch-icon" tamanhos = "180x180" href = "../LOADINGPAGE/static/image/apple-touch-icon.png">
+    <link rel = "icon" type = "image/png" tamanhos = "32x32" href = "../LOADINGPAGE/static/image/favicon-32x32.png">
+    <link rel = "icon" type = "image/png" tamanhos = "16x16" href = "../LOADINGPAGE/static/image/favicon-16x16.png">
+    <link rel = "manifest" href = "../static/site.webmanifest">
+
+    <link rel="stylesheet" href="perguntas.css">
     <title>IMAG | PERGUNTAS</title>
 </head>
 <body>
-<img src="../static/image/back.png" alt="foto de fundo">
-<form >
-    <div>
-        SELECIONE UMA OPÇÃO:
-    </div>
-    <div id="inicioDeEscolhas">
-  	  	<ul>
-            <li>
-                <div id="dir"> Director Geral </div><br>
+<img id="fundo" src="../LOADINGPAGE/static/image/back.png" alt="foto de fundo">
+
+<form>
+    <h1 id="titulo">
+        SELECIONE UMA OPÇÃO
+    </h1>
+    <div class="inicioDeEscolhas" id="inicioDeEscolhas">
+  	  	<ul >
+            <li id="dir">
+                <t > Director Geral </t>
             </li>
-            <li>
-                <div id="coo"> Coordenador Pedagógico  </div><br>
+            <li id="coo">
+                <t > Coordenador Pedagógico  </t>
             </li>
-            <li>
-                <div id="sup"> Supervisor Pedagógico  </div><br> 
+            <li id="sup">
+                <t > Supervisor Pedagógico  </t>
             </li>                  
-            <li>
-                <div id="ori"> Orientador  </div><br>
+            <li id="ori">
+                <t > Orientador  </t>
             </li>
-            <li>
-                <div id="sec"> secretário </div><br>
+            <li id="sec">
+                <t > secretário </t>
             </li>
-            <li>
-                <div id="prof"> Professor </div><br>
+            <li id="prof">
+                <t > Professor </t>
             </li>
-            <li>
-                <div id="alu"> Aluno </div><br>
+            <li id="alu">
+                <t > Aluno </t>
             </li>
         </ul>
            
   	</div>
-<!--ESSA É A DIVISÓRIA DO DIRECTOR GERAL--> 
-
+<!--ESSA É A DIVISÓRIA DO DIRECTOR GERAL-->
         <div class="director">
-            <div id="dadosPessoaisDir">
-            
-                <label >Por favor, insira seus dados pessoais</label><br>
-                <input type="text" placeholder="Nome Completo"> <br>
-                <input type="email" placeholder="Número de telefone ou email"> <br>
-                <input type="number" placeholder="Número de Identificação do Director"> <br>
-                <input type="submit" name="enviar" >
-            </div>
         </div>
 
 
@@ -57,48 +55,47 @@
 
 
 <!--ESSA É A DIVISÓRIA DOS ALUNOS-->
-        <div class="Aluno">
+        <div class="Aluno ">
             
                 <div id="OpcaoAlu">
-                    <div  id="OpcaoAlu2">
-                        <div>CURSOS</div>
-                            <ul>
-                        <li>
-                            <div id="info" > INFORMÁTICA </div><br>
-                        </li>
-                        <li>
-                            <div id="adm"> ADMINISTRAÇÃO PÚBLICA </div><br>
-                        </li>
-                        <li>
-                            <div id="fin"> FINANÇAS  </div><br>
-                        </li>
-                        <li>
-                            <div id="GRH"> GESTÃO DE RECURSOS HUMANOS  </div><br>
-                        </li>
-                        <li>
-                            <div id="cont"> CONTABILIDADE </div><br>
-                        </li>
-            
-                            </ul>
+                    <div  id="OpcaoAlu2" >
+
+                        <ul>
+                            <li>
+                                <div id="info" > INFORMÁTICA </div>
+                            </li>
+                            <li>
+                                <div id="adm"> ADMINISTRAÇÃO PÚBLICA </div>
+                            </li>
+                            <li>
+                                <div id="fin"> FINANÇAS  </div>
+                            </li>
+                            <li>
+                                <div id="GRH"> GESTÃO DE RECURSOS HUMANOS  </div>
+                            </li>
+                            <li>
+                                <div id="cont"> CONTABILIDADE </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="AlunoDeInformática">
                 <div id="OpcaoAluInfo">
                     <div id="OpcaoAluInfo2">
-                        <div >CLASSES</div>
+
                     <ul>
                         <li>
-                            <div id="dezClass"> 10ª CLASSE </div><br>
+                            <div id="dezClass"> 10ª CLASSE </div>
                         </li>
                         <li>
-                            <div id="onzeClass"> 11ª CLASSE </div><br>
+                            <div id="onzeClass"> 11ª CLASSE </div>
                         </li>
                         <li>
-                            <div id="dozeClass"> 12ª CLASSE </div><br>
+                            <div id="dozeClass"> 12ª CLASSE </div>
                         </li>
                         <li>
-                            <div id="trezeClass"> 13ª CLASSE  </div><br>
+                            <div id="trezeClass"> 13ª CLASSE  </div>
                         </li>
                     </ul>
                     </div>
@@ -142,13 +139,7 @@
         
         </div>
     
-       <div id="dadosPessoaisAlu">
-        
-                    <label >Por favor, insira seus dados pessoais</label><br>
-                    <input type="text" placeholder="Nome Completo"> <br>
-                    <input type="email" placeholder="Número de telefone ou email"> <br>
-                    <input type="submit"  placeholder="enviar">
-        </div>
+
 
 <!--ESSA É A DIVISÓRIA DOS PROFESSORES-->
         <div class="Professor">
@@ -337,6 +328,6 @@
      
 
 
-<script type="text/javascript" src="../static/javascript/perguntas.js"></script>
+<script type="text/javascript" src="perguntas.js"></script>
 </body>
 </html>

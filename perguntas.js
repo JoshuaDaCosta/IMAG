@@ -1,43 +1,14 @@
 
 //DIRECTOR
-function clickDir(){
-     document.getElementById("inicioDeEscolhas").style.display="none";
-     document.getElementById("dadosPessoaisDir").style.display="block";
-}
-dir.addEventListener("click", clickDir)
-
-/*
-aqui, o joshua cria a relação com a base de dados do Firebase, de pois de criar a validação do director, poderá aparecer a próxima tela(menu) que será criada:
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//function clickDir(){
+//     document.getElementById("inicioDeEscolhas").style.display="none";
+//     document.getElementById("dadosPessoaisDir").style.display="block";
+//}
+//dir.addEventListener("click", clickDir)
+//
+///*
+//aqui, o joshua cria a relação com a base de dados do Firebase, de pois de criar a validação do director, poderá aparecer a próxima tela(menu) que será criada:
+//*/
 
 
 // ALUNO
@@ -46,6 +17,8 @@ aqui, o joshua cria a relação com a base de dados do Firebase, de pois de cria
 function clickAlu(){
      document.getElementById("inicioDeEscolhas").style.display="none";
      document.getElementById("OpcaoAlu").style.display="block";
+     document.getElementById('titulo').innerText="Qual é o curso que quer fazer?"
+
 }
 alu.addEventListener("click", clickAlu)
 
@@ -53,7 +26,8 @@ alu.addEventListener("click", clickAlu)
 //quando é clicado na opção cursos
 function clickCursos(){
      document.getElementById("OpcaoAlu2").style.display="none";
-     document.getElementById("OpcaoAluInfo").style.display="block";  
+     document.getElementById("OpcaoAluInfo").style.display="block";
+     document.getElementById('titulo').innerText="Qual é a classe que quer fazer?"
 }
 info.addEventListener("click", clickCursos)
 adm.addEventListener("click", clickCursos)
@@ -64,7 +38,8 @@ cont.addEventListener("click", clickCursos)
 //quando é clicado na opção classes
 function clickClass(){
      document.getElementById("OpcaoAluInfo2").style.display="none";
-     document.getElementById("OpcaoAluInfoClass").style.display="block";  
+     document.getElementById("OpcaoAluInfoClass").style.display="block";
+     document.getElementById('titulo').innerText="Qual é o turno que quer fazer?"
 }
 dezClass.addEventListener("click", clickClass)
 onzeClass.addEventListener("click", clickClass)
@@ -75,7 +50,8 @@ trezeClass.addEventListener("click", clickClass)
 //quando é clicado na opção turno
 function clickCTurn(){
      document.getElementById("OpcaoAluInfoClass2").style.display="none";
-     document.getElementById("OpcaoAluInfoClassTurn").style.display="block";  
+     document.getElementById("OpcaoAluInfoClassTurn").style.display="block";
+     document.getElementById('titulo').innerText="Qual é a sala que quer estudar?"
 }
 manha.addEventListener("click", clickCTurn)
 tarde.addEventListener("click", clickCTurn)
@@ -83,9 +59,14 @@ noite.addEventListener("click", clickCTurn)
 
 //quando é clicado na opção sala
 function clickSala(){
+     document.getElementById('titulo').innerHTML='<a id="app"href="/app">proximo</a>'
+     document.querySelector('form').style.background="transparent"
      document.getElementById("OpcaoAluInfoClassTurn2").style.display="none";
-     document.getElementById("dadosPessoaisAlu").style.display="block";  
+     document.getElementById("dadosPessoaisAlu").style.display="none";
+
+
 }
+
 salaDez.addEventListener("click", clickSala)
 salaOnze.addEventListener("click", clickSala)
 salaDoze.addEventListener("click", clickSala)
