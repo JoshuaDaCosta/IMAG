@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../static/css/mediaqueryindex.css">
     <link rel="stylesheet" href="../static/css/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- FAVICON-->
     <link rel = "apple-touch-icon" tamanhos = "180x180" href = "../static/image/apple-touch-icon.png">
     <link rel = "icon" type = "image/png" tamanhos = "32x32" href = "../static/image/favicon-32x32.png">
@@ -15,186 +14,58 @@
     <title>IMAG | LOADING PAGE</title>
 
 </head>
-<body onLoad="loading()">
-<div id="preload">
-    <figure id="loader">
-         IMAG
-    </figure>
-</div>
-<container id="content" class="conteudo">
+<body>
 <header>
     <figure>
-        <h1>
-            <a href="#">IMAG</a>
-        </h1>
+        <a href="#">
+            <img src="https://s3-alpha-sig.figma.com/img/2abe/c44f/5492440c1bfd0943b233c27ff31f7c6f?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=U~6cixJ9no5eSaL1sjOYpzwIn~e6w9dC7NpZ4cetJx4s~s-~BxBlqOpbE6BigGz9GdNYJwlfSvx-EOePzTFj5h4diAJTY09yNPvopTHosUuSoQuglAAgbDLkB9V4x9mhLO7ulbbt~DzIBlcYr6d1hg~CDYJEhnBgBKSUqnBPyJlwh8JcKfgVkGhxJ0yy1Yaz934JGn5yL4isZV6-hzMFt80xdWvNP3IFawHmb9KzQu3WPyFyOfdiT2rcuc~tsfEE0cVMtT6-LIYcXZFywwwQDyeyDrQ8iPeFKnanJVLC2syJVvlW52LIzzQphS-~nR5Zr74iW1MhT1Y60YCZoHkn7Q__"
+                alt="logosite">
+            <h1>
+                IMAG
+            </h1>
+        </a>
     </figure>
-    <nav id="nav" class="navlink">
+        <section>
+            <img src="https://s3-alpha-sig.figma.com/img/46b6/b0cf/2e0b03e4c9f5b460cb93dfbfc718e8b6?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Dxij7WB2f~roreakjBKfGpkelkw7uc78n83Ic7cIVm3v1ltL4HvlReRkWrFlVCO9xT3Gcw4LQSJHpiCMt8uqW~yMmhQbXsQ~epuLCd2wOPmTiEDI3tOIjL1wBH1kNCB7uB4IENCQKUtex0sEZ83QbkIrVQ-LywLofOKNhaD9JjKxcdW0VVqaaHrbPrELTxl~KD5CSJWM4bLx3CMYErVWVdqEjCwgSeHevTuygLQAnqAD7Z6hhqxejbCYIZZwWfIO~-5oLzh4v6RW5XR2eJgu73j8moqACPviVVm9NYkvrxsRs~J-icBgP6-m9q2Ify6NMpMPKVG2~WWKIwPMn1yvqA__" alt="logousuario">
+
+        </section>
         <ul>
-            <li class="dep"><a href="#inicio">Ínicio</a></li>
-            <li class="dep"><a href="#quemsomos">Quem somos?</a></li>
-            <li class="dep"><a href="#ondenosestamos">Onde nós estamos?</a></li>
-            <li class="dep"><a href="#contactos">Contactos</a></li>
+            <li id="inicio-link"><a href="#inicio">início</a></li>
+            <li><a href="#inscricao">inscrição</a></li>
+            <li><a href="#eventos">eventos</a></li>
+            <li><a href="#campus">campus</a></li>
+            <li><a href="#contactos">contactos</a></li>
         </ul>
-        <ul class="ul-contas">
-            <li class="conta"><a  href="/login">Entrar</a></li>
-            <li class="conta"><a href="/criar">Criar</a></li>
-        </ul>
-    </nav>
+
 </header>
 <main>
     <section id="inicio">
-<!--        <div>-->
-<!--            <img src="../static/image/back.png" alt="imagem da escola">-->
-<!--            <h1 id="tit">-->
-<!--                Instituto Médio de Gestão e Administração-->
-<!--            </h1>-->
-<!--        </div>-->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../static/image/back.png"  class="d-block w-100" alt="imagem da escola">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>INSTITUTO MÉDIO DE ADMINISTRAÇÃO DE VIANA</h5>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img  src="../static/image/imagb.jpg" class="d-block w-100" alt="imagem da escola">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>INSTITUTO MÉDIO DE ADMINISTRAÇÃO DE BELAS</h5>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img  src="../static/image/imagnv.jpg" class="d-block w-100" alt="imagem da escola">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>INSTITUTO MÉDIO DE ADMINISTRAÇÃO DE NOVA VIDA</h5>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-
+        <img src="https://s3-alpha-sig.figma.com/img/bac8/1ac6/7acce05217afa201ac0d5948d32febdf?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XDA6Pv9PJ4WtOwnLWrpBCuCXNizeHJ196hl8p8Q3~Rrfth6hCHstxQKb1ILumoINEX6cB5jkwvM-xi1eUVmA6N7kYPaKtbXlb1MZdT38iadbn~-25YUiACiQ9JBr8QwfO5HV5mAlAjxB~~2VXMqreELyLxOlSQkKCYI0fkuvW-N-lv57ihmkN8EILHj2U0ZzGiFgpBTle4G4S2Md~BwAeop5r-LB5jqN9lizklvudtMgKOPyUpF~nob5J2Jnv2cXSSisLd9d4N83y06ZGWZeXtyKnOARh4uHA9ZDiNXhOyaNTSBXJwaKyocbNw3CrJo087AdmuPLZTQsRwF0n5fu9A__"
+             alt="foto de fundo">
+        <h1>instituto médio de administração e gestão</h1>
+        <a href="#inscreva-se">inscreva-se</a>
     </section>
-    <section id="quemsomos">
-        <div><p>
-            Somos alunos <b>IMAG-VIANA</b>, que por ventura somos do ultimo ano de estudo no instituto na qual temos um
-            projecto dirigidamente a instituição que estudamos.
-        </p>
-            <p>
-                Bem, temos como tema <b>IMPLEMENTAÇÃO DE UM WEBSITE PARA A GESTÃO ESCOLAR DO IMAG-V PARA OS ANOS DE
-                2023-2024</b>
-            </p>
-            <p>
-                Infelizmente, identificamos diversos problemas de gestão escolar que o IMAG enfrenta antes, durante e
-                depois do ano letivo. Com os estudos que realizamos podemos minimizar tais problemas
-            </p></div>
-        <div><p>
-            problemas como: <i>perda de documentos</i>, <i>documentos em espera</i>, <i>complicações, subornos</i>, <i>alterações
-    desnecessárias
-    em documentos alheios</i>
-        </p>
-        <p>
-            OBJETIVOS
-            <br>
-            Geral: <br><i>Desenvolver um website para resolver os problemas de gestão escolar existentes no IMAG.</i>
-
-            <br>Específicos:
-            <br>
-            <i>• Elaborar soluções para resolver os problemas de gestão que o IMAG apresenta.</i>
-        </p>
-            <p>
-
-                <i>• Auxiliar a instituição no gerenciamento da vasta gama de informação dos alunos existentes. <br>
-                    • Fornecer rapidamente informações pertencentes qualquer entidade da instituição dependo da
-                    hierarquia existente na mesma.</i>
-
-            </p>
-        </div>
-    </section>
-    <articule id="num">
-        <li>
-            <h1>ALUNO</h1>
-            <h4>458</h4>
-        </li>
-        <li>
-            <h1>PROFESSOR</h1>
-            <h4>60</h4>
-        </li>
-        <li>
-            <h1>CURSOS</h1>
-            <h4>8</h4>
-        </li>
-        <li>
-            <h1>VAGAS</h1>
-            <h4>1.000</h4>
-        </li>
-    </articule>
-</main>
-<footer>
-    <section id="f-part-um">
-        <div id="items">
-            <div>
-                <li><a href="#">Inscrições</a></li>
-                <li><a href="#">Matriculas</a></li>
-                <li><a href="#">Confirmações</a></li>
-            </div>
-            <div>
-                <li><a href="#">Vagas</a></li>
-                <li><a href="#">Certifcados</a></li>
-                <li><a href="#">Blog</a></li>
-            </div>
-            <div>
-                <li><a href="#">Eventos</a></li>
-                <li><a href="#">Jornal Escolar</a></li>
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Recados</a></li>
-            </div>
-            <div>
-                <li><a href="#">Documentos</a></li>
-                <li><a href="#">Boletim</a></li>
-                <li><a href="#">Associação dos estudantes</a></li>
-            </div>
-        </div>
-        <form>
-
-                <h1>Contactos</h1>
-
-            <div>
-                <div class="msg um">
-                      Olá, qual é o seu nome?
-                </div>
-                <div class="msg dois">
-                    responde
-                </div>
-            </div>
-            <input  style="border:none" class="msg" type="text" placeholder="podes escrever algo aqui...">
-
-        </form>
-    </section>
-    <section id="f-part-dois">
-        <b>Copyright (c) 2023 Angola-IMAG</b>
+    <section id="sobre">
         <div>
-            <li><a href="facebook.com" target="_blank">FACEBOOK</a></li>
-            <li><a href="instagram.com">INSTAGRAM</a></li>
-            <li><a href="threads.com">THREADS</a></li>
-            <li><a href="twitter.com">TWITTER</a></li>
+            <h1>o que é imag web</h1>
+            <p>
+                O imag é um site de gestão escolar que visa a facilitar a comunicação entre escola, alunos e
+                professores. com o imag pode controlar o número de vagas disponíveis, solicitar documentos da
+                instituição de forma online, além de permitir que os professores tenham um bom controle das notas e
+                desempenhos dos alunos.
+            </p>
+            <a href="#">saiba mais</a>
+        </div>
+        <div>
+            <a href="#" class="links-sobre">1º incrição online</a>
+            <a href="#" class="links-sobre">2º controle de vagas</a>
+            <a href="#" class="links-sobre">3º documentos online</a>
         </div>
     </section>
-</footer>
-</container>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <section id="info">
+
+    </section>
+</main>
 <script type="text/javascript" src="../static/javascript/index.js"></script>
 </body>
 </html>
